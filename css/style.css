@@ -1,0 +1,146 @@
+/* put your css here */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+
+#container
+{
+	display: flex;		/* makes container a flexbox*/
+	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
+	box-sizing:border-box;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:2050px;
+	
+}
+
+
+.bottom_button{
+	display: flex;
+	box-sizing:border-box;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	background-color: #c5b358; /* colour of the button */
+	text-align: center;
+	padding: 1em .75em;
+	text-decoration: none;
+	color: #fff; /* Text Colour */
+
+}
+
+.card_bottom{
+	display: flex;
+	flex-flow:column;
+}
+
+.card{
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	max-width: 800px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff; /* colour of the box it is in */
+	margin-right:auto;
+	margin-left:auto;
+}
+.music{
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;
+	max-width: 500px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #aaa; /* colour of the box it is in */
+	margin-right:auto;
+	margin-left:auto;
+}
+.bios{
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	max-width: 800px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff; /* colour of the box it is in */
+	margin-right:auto;
+	margin-left:auto;
+}
+.foot{
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	max-width: 700px; /**/
+	margin: 5px;
+	padding: 5px;
+	background-color: #72b9c7; /* colour of the box it is in */
+	margin-right:auto;
+	margin-left:auto;
+}
+
+
+.pageContentWrapper {
+    margin-bottom:100px;
+    /* Height of footer*/
+}
+
+
+#radiusTest{
+        width: 100px;
+	height: 40px;
+	background-color: #247F7F;
+	border-style:double;
+        border-radius: 5px;  /*set radius for all corners*/
+	border-width: 10px;
+	border-color: #72b9c7;
+	text-decoration: none;
+	color: #fff;
+	text-align: center
+}
+
+/*************************
+Navigation
+
+**************************/
+.navbar-default {
+    background-color: #72b9c7;
+	color:#ffffff;
+}
+.underline{
+  text-decoration:underline;
+}
+
+
+
+/*********************************
+MEHRAN's FOOTER
+*********************************/
+.main-footer {
+	height: 50px;
+	background-color: #72b9c7;
+}
+
+/* NOTE: WHY DO U THINK IT IS USEFUL */
+@media (max-width: 767px) {
+	.main-footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.container {
+	width: auto;
+	max-width: 680px;
+}
+.container .credit {
+	margin: 20px 0;
+}
+  

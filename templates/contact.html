@@ -1,0 +1,37 @@
+<body ng-app="myApp">
+<div class="container"> 
+	<div ng-controller="DirectiveController">
+    <div my-hello></div>
+  </div>
+</body>
+<div class="col-md-12">
+	<div>
+<h2>Contact me for bigger prints</h2>
+</div>
+</div>
+<div class="col-md-10">
+<form ng-submit="submit()" class="form-horizontal" novalidate>
+      		<label>Type of Event:</label><br>
+      		<select ng-model="selectedCar">
+				    <option  ng-repeat="wedding in weddings" >Wedding</option>
+				    <option  ng-repeat="corporate in corporates" >Corporate</option>
+				    <option  ng-repeat="other in others" >Other</option>
+				</select>
+      		<br>
+      			<label>If other, please give more detail:</label><br>
+      			<textarea  rows="5" id="comment"></textarea>
+      		<br>
+      		<label>Date of Event: (Check out our Google calendar for available dates)</label><br>
+      		<input type="text" ng-model="user.age"/>
+      		<br>
+      		<label>Your Name: </label><br>
+      		<input type="text" ng-model="user.age"/>
+      		<br>
+      		<label>Your Phone number, or email: </label><br>
+      		<input type="text" ng-model="user.age"/>
+      		<br>
+      		<button class="btn">Submit</button>
+</form>
+</div>
+</div>
+
